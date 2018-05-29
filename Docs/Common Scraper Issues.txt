@@ -1,5 +1,7 @@
 ﻿Common Scraper Issues 
 
+Content of Google Doc: https://docs.google.com/document/d/18cvRwQaPaaMqshGPk99WVFvDiw8HiRc5UyZw5QejFWo/edit 
+Date Saved (5/29/18)
 
 EIB
 * Changed the Show (Select ‘All’) entries button 
