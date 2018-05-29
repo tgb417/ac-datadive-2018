@@ -4,7 +4,7 @@ Accountability Counsel is a nonprofit organization committed to helping communit
 
 Goals will be refined in the coming weeks when DataKind, Accountability Counsel and DataKind support volunteers will further vet and prepare projects for the DataDive. 
 
-## 1) Improving Scrapers 
+## 1) [GOAL] Improving Scrapers 
 **Related Files**
 ```
     Scrapers\ ## See Accountability Counsel DataDive - Complaint Study.gdoc for more info on acronym meaning. 
@@ -63,7 +63,7 @@ DK / AC will create a test set of “changed” scrape examples (Need to support
     * Bank Type of Support
 * (UNLIKELY GOAL) Create additional scrapers for the sites listed in this link which have not been written yet.
 
-## 2) Understanding Complaint Ineligibility  
+## 2) [GOAL] Understanding Complaint Ineligibility  
 **Related Data** 
 * data/accountability_console_2018-02-24.csv - Complaint Data
 * data/ac_benchmarks_data_2018-05-11.csv - Data related to the how the different banks handle complaints, and other info. (like bank metadata)
