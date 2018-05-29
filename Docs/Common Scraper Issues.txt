@@ -1,0 +1,14 @@
+﻿Common Scraper Issues 
+
+
+EIB
+* Changed the Show (Select ‘All’) entries button 
+   * Used to have 5 options (Select 25, 50, 100, 250, All), now has 4 options (50, 100, 250, All). 
+   * => xpath from ‘...option[5]’ to ‘...option[4]’
+* Changed ‘help Us’ website button (removed it)
+   * Button = xpath(‘...@id=”helpUsWebsite”’) not there anymore, and was returning ElementNotVisible Exception
+Panel/EIB
+* Sometimes will randomly stop and return NoSuchElementException on xpath that does exist (and sometimes works)… I’ve done some research on this issue and have a feeling it has to do with the interacting iframes
+* This has especially been an issue with the Panel as we’re clicking on links and opening new tabs for projects, then switching back over to the main browser and complaint windows
+ADB
+* Changed their table rows, xpath from ('/html/body/div/div[2]/div/div/main/table[1]/tbody/tr') to ('/html/body/div/div/div/div/main/table[1]/tbody/tr').
