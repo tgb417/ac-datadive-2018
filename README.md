@@ -2,7 +2,6 @@
 
 Accountability Counsel is a nonprofit organization committed to helping communities battle the harmful effects of international development projects in their area. 
 
-Goals will be refined in the coming weeks when DataKind, Accountability Counsel and DataKind support volunteers will further vet and prepare projects for the DataDive. 
 
 ## 1) [GOAL] Improving Scrapers 
 
