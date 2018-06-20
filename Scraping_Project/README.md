@@ -6,21 +6,17 @@
 ## 1) [GOAL] Improving Scrapers 
 **Related Files**
 ```
-    Scrapers\ ## See Accountability Counsel DataDive - Complaint Study.gdoc for more info on acronym meaning. 
-        ScarpersMay24th\ ## Shared on the 24th newest iteration should work best right now
+    AC_Current_Scrapers\ ## See Project Brief for more info on acronym meaning. 
             adb_spf_scraper.py
-            mici_scraper.py
             panel_scraper.py
-        MidMayScrapers\ ## Shared earlier but some have already broken due to site changes. 
-            adb_spf_scraper.py
             cao_scraper.py
-            eib_project_scraper.py
             eib_scraper.py
             mici_scraper.py
             panel_scraper.py
+            eib_project_scraper.py (lower priority)
 ```
 
-**Scoping Notebooks**
+**Template Scraper**
 ```
     Notebooks\
         DK_ScraperReview.pynb : Just the scraper code copied 
@@ -30,15 +26,14 @@
 ```
 
 ### a) Making the scrapers (both kinds) more robust and less prone to break 
-Additional IAM web scrapers (Panel, IAB, MICI, EIB, CAO). DataKind will work with DataDive support volunteers to identify guidelines for improvement. Also see `/Docs/Common Scraper Issues.txt`.
+Additional IAM web scrapers (Panel, IAB, MICI, EIB, CAO). DataKind will work with DataDive support volunteers to identify guidelines for improvement. Also see `/Ref/Common Scraper Issues.txt`.
 
 
 Major areas for improvement include
 * More resilient to minor changes in website structure
 * Run faster 
-* ...
 
-### b) Save and Compare Scrapes
+### b) Save and Compare Scrapes [FILL ME IN PLEASE]
 * Code to compare older web scrape to a newer web scrape (old scrape data in /Data/Complaint_Data_Scraped.xlsx)
 * DK will save a complete scrape list (Data/Complaint_Data_Scraped.xlsx)
 DK / AC will create a test set of “changed” scrape examples (Need to support AC in creating this)
@@ -55,9 +50,4 @@ DK / AC will create a test set of “changed” scrape examples (Need to support
     * Easy to edit timing of scrape execution
     * Asynchronous
     * Resilient to errors in one of the scrapes (completes other scrape runs even if one errors out)
-* (UNLIKELY GOAL) Semi-automation of data parsing/clearing of scraped data into Accountability Console schema. Where possible mapping scraped values in the [field1, field2, field3] to AC categories. Develop code that can assist in the correction process. Much of this process involves research and judgment but some of the information could be estimated using previous “cleaned” data. Using all available scraped data and the cleaned version of the data stored in the AC teams can attempt to build algorithms that suggest the field value. Specifically the following fields are candidates for automation
-    * Sector
-    * Issue Area
-    * Region/Country
-    * Bank Type of Support
 * (UNLIKELY GOAL) Create additional scrapers for the sites listed in this link which have not been written yet.
