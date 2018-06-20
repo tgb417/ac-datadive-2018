@@ -40,7 +40,7 @@ DK / AC will create a test set of “changed” scrape examples (Need to support
 * Develop code to automatically flag changes in new scrapes to previous scrapes and provide output for AC review. (Need to create "fake" changed scrape data - a sample of rows from Data/Complaint_Data_Scraped.xlsx where minor changes have been made.)
 * Output --> Simple text table indicating the project number and fields that have changed in the scraped data. 
 
-**Template Scraper**
+**Diff Analysis**
 ```
     Diff_Analysis\
        [BEN 2 Fill IN]
