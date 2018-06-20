@@ -25,11 +25,12 @@ Major areas for improvement include
 * More resilient to minor changes in website structure
 * Run faster 
 
-**Template Scraper**
-```
+    **Template Scraper**
+    
+    ```
     Template_Scraper\
        [Srinivas 2 Fill IN]
-```
+    ```
 
 
 ### b) Save and Compare Scrapes [FILL ME IN PLEASE]
@@ -40,11 +41,11 @@ DK / AC will create a test set of “changed” scrape examples (Need to support
 * Develop code to automatically flag changes in new scrapes to previous scrapes and provide output for AC review. (Need to create "fake" changed scrape data - a sample of rows from Data/Complaint_Data_Scraped.xlsx where minor changes have been made.)
 * Output --> Simple text table indicating the project number and fields that have changed in the scraped data. 
 
-**Diff Analysis**
-```
+    **Diff Analysis**
+    ```
     Diff_Analysis\
        [BEN 2 Fill IN]
-```
+    ```
 
 
 ### c) Updating the scrapers to include downloading documents (e.g. PDFs) and storing them. 
