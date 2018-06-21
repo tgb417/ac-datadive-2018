@@ -11,3 +11,6 @@ Please see content in the `Scraping_Project` [folder](https://github.com/datakin
 
 Please see content in the `Complaint_Analysis_Project` [folder](https://github.com/datakind/ac-datadive-2018/tree/master/Complaint_Analysis_Project). 
 
+## 3) [GOAL] Automatic Scrape Comparison
+
+Please see content in the `Compare_Scrapes` [folder](https://github.com/datakind/ac-datadive-2018/tree/master/Compare_Scrapes). 

@@ -7,9 +7,9 @@ import time
 import datetime
 import unicodecsv
 from selenium import webdriver
-import selenium.webdriver.support.ui as ui
 from selenium.webdriver.common.keys import Keys
-from selenium.common.exceptions import NoSuchElementException, StaleElementReferenceException
+from selenium.common.exceptions import NoSuchElementException
+from accountability_console.models import Complaint, IAM
 
 def scrape():
     with open('eib_scraped.csv', 'wb') as file:
@@ -43,7 +43,6 @@ def scrape():
             'Compliance Review End Date',
             'Monitoring Start Date',
             'Monitoring End Date',
-            'Compliance Report Issued?',
             'Date Closed',
             'Documents',
             'Hyperlink',
@@ -59,12 +58,11 @@ def scrape():
 
 def eib_scrape(driver, writer):
     driver.get('http://www.eib.org/about/accountability/complaints/cases/index.htm')
-    main_window = driver.current_window_handle
     time.sleep(2)
-    select_all = driver.find_element_by_xpath('//*[@id="consultationsList"]/div/div[3]/div[1]/select/option[4]')
+    select_all = driver.find_element_by_xpath('//*[@id="consultationsList"]/div/div[3]/div[1]/select/option[5]')
     select_all.click()
     time.sleep(2)
-    # button = driver.find_element_by_xpath('//*[@id="helpUsWebsite"]/div/div[2]/a[1]').click()
+    button = driver.find_element_by_xpath('//*[@id="helpUsWebsite"]/div/div[2]/a[1]').click()
     time.sleep(1)
     button = driver.find_element_by_xpath('//*[@id="footer"]/div[3]/div[2]/div/p/button').click()
     time.sleep(1)
@@ -82,39 +80,27 @@ def eib_scrape(driver, writer):
             country = driver.find_element_by_xpath('//*[@id="consultationsList"]/div/table/tbody/tr[%s]/td[4]' % row).text
             year = filing_date[-4:]
             project_link.click()
-            # iframe = driver.find_element_by_tag_name('noscript')
-            # iframe1 = driver.find_element_by_tag_name('iframe')
-            # driver.switch_to.frame()
-            driver.switch_to_window(driver.window_handles[1])
-            driver.switch_to.default_content()
-            try:
-                case_text = driver.find_element_by_xpath('//*[@id="consultations"]').text
-                junk, case_text = case_text.split('Reference: ', 1)
-                case_id, junk = case_text.split('\n', 1)
-                try: 
-                    junk, case_text = case_text.strip().split('Complainant: ', 1)
-                    filer, junk = case_text.split('\n', 1)
-                except ValueError:
-                    print('Error')
-            except Exception as error:
-                case_id = None
-                filer = None
+            time.sleep(1)
+            case_text = driver.find_element_by_xpath('//*[@id="consultations"]').text
+            junk, case_text = case_text.split('Reference: ', 1)
+            case_id, junk = case_text.split('\n', 1)
+            try: 
+                junk, case_text = case_text.strip().split('Complainant: ', 1)
+                filer, junk = case_text.split('\n', 1)
+            except ValueError:
+                print('Error')
             registration_start_date = filing_date
-            stages = driver.find_elements_by_class_name('caseDate')
-            # for stage in stages:
-                # print(stage.text)
-            # registration_end_date = driver.find_element_by_xpath('//*[@id="consultations"]/div[1]/div[1]/div[2]').text
-            # eligibility_start_date = registration_end_date
-            # eligibility_end_date = driver.find_element_by_xpath('//*[@id="consultations"]/div[1]/div[2]/div[2]').text
-            # cr_start_date = driver.find_element_by_xpath('//*[@id="consultations"]/div[1]/div[3]/div[2]').text
-            # dr_end_date = driver.find_element_by_xpath('//*[@id="consultations"]/div[1]/div[4]/div[2]').text
-            # cr_end_date = driver.find_element_by_xpath('//*[@id="consultations"]/div[1]/div[5]/div[2]').text
-            # date_closed = driver.find_element_by_xpath('//*[@id="consultations"]/div[1]/div[6]/div[2]').text
-            # try:
-            #     monitoring_end_date = driver.find_element_by_xpath('//*[@id="consultations"]/div[1]/div[7]/div[2]').text
-            # except NoSuchElementException:
-            #     print('Monitoring: %s' %error)
-            #     monitoring_end_date = None
+            try:
+                registration_end_date = driver.find_element_by_xpath('//*[@id="consultations"]/div[1]/div[1]/div[2]').text
+                eligibility_start_date = registration_end_date
+                eligibility_end_date = driver.find_element_by_xpath('//*[@id="consultations"]/div[1]/div[2]/div[2]').text
+                cr_start_date = driver.find_element_by_xpath('//*[@id="consultations"]/div[1]/div[3]/div[2]').text
+                dr_end_date = driver.find_element_by_xpath('//*[@id="consultations"]/div[1]/div[4]/div[2]').text
+                cr_end_date = driver.find_element_by_xpath('//*[@id="consultations"]/div[1]/div[5]/div[2]').text
+                date_closed = driver.find_element_by_xpath('//*[@id="consultations"]/div[1]/div[6]/div[2]').text
+                monitoring_end_date = driver.find_element_by_xpath('//*[@id="consultations"]/div[1]/div[7]/div[2]').text
+            except NoSuchElementException:
+                print ('No Date')
             row_data = [
                 'EIB',
                 year,
@@ -135,31 +121,25 @@ def eib_scrape(driver, writer):
                 complaint_status,
                 filing_date,
                 registration_start_date,
+                registration_end_date,
+                eligibility_start_date,
+                eligibility_end_date,
                 None,
+                dr_end_date,
+                cr_start_date,
+                cr_end_date,
                 None,
-                None,
-                None,
-                None,
-                None,
-                None,
-                None,
-                None,
-                None,
-                None,
+                monitoring_end_date,
+                date_closed,
                 None,
                 driver.current_url,
-                None,
-                None,
-                None,
             ]
             writer.writerow(row_data)
             print(row_data)
-            driver.close()
-            driver.switch_to_window(main_window)
-            # driver.execute_script('window.history.go(-1)')
+            driver.execute_script('window.history.go(-1)')
             time.sleep(0.7)
-            # select_all = driver.find_element_by_xpath('//*[@id="consultationsList"]/div/div[3]/div[1]/select/option[5]')
-            # select_all.click()
+            select_all = driver.find_element_by_xpath('//*[@id="consultationsList"]/div/div[3]/div[1]/select/option[5]')
+            select_all.click()
             time.sleep(2)
             driver.find_element_by_tag_name('body').send_keys(Keys.CONTROL + Keys.HOME)
             time.sleep(1)

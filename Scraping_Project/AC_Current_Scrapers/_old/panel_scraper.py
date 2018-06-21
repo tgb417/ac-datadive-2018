@@ -5,8 +5,6 @@ from builtins import object
 import time
 import unicodecsv
 from selenium import webdriver
-import selenium.webdriver.support.ui as ui
-from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from selenium.common.exceptions import NoSuchElementException
 
@@ -42,13 +40,10 @@ def scrape():
             'Compliance Review End Date',
             'Monitoring Start Date',
             'Monitoring End Date',
-            'Compliance Report Issued?',
             'Date Closed',
             'Documents',
             'Hyperlink',
-            'Project Date',
-            'Project Status',
-            'Project Description',
+            'Compliance Report Issued?'
         ]
         writer.writerow(header)
         driver = webdriver.Chrome()
@@ -62,6 +57,8 @@ def inspection_panel_scrape(driver, writer):
     rows = driver.find_elements_by_xpath('//*[@id="tblnewAdd"]/tbody/tr')
     row_range = range(2, len(rows)+1)
     for row in row_range:
+        # iframe = WebDriverWait(browser, 5).until(EC.presence_of_element_located((By.TAG_NAME, "iframe")))
+        # browser.switch_to.frame(iframe)[0]
         case_id = driver.find_element_by_xpath('//*[@id="tblnewAdd"]/tbody/tr[%s]/td[1]' % row).text
         time.sleep(1)
         country = driver.find_element_by_xpath('//*[@id="tblnewAdd"]/tbody/tr[%s]/td[2]' % row).text
@@ -138,37 +135,42 @@ def inspection_panel_scrape(driver, writer):
         documents_list = driver.find_elements_by_class_name('DocsList')
         for document in documents_list:
             attached_documents = document.find_element_by_css_selector('a').get_attribute('href')
-        complaint_window = driver.current_window_handle 
-        project_link = driver.find_element_by_id('projectInformationTitle')
-        project_link.click()
-        time.sleep(2)
-        project_window = driver.window_handles[1]
-        driver.switch_to_window(project_window)
-        project_details_link = driver.find_element_by_xpath('//*[@id="projdetailsId"]')
-        project_details_link.click()
-        try:
-            print('we here!')
-            project_company = driver.find_element_by_xpath('//*[@id="projectDetails"]/div[1]/div[2]/table/tbody/tr[3]/td[2]').text
-            print('did this run?')
+        complaint_window = driver.window_handles[0]
+        try: 
+            project_link = driver.find_element_by_id('projectInformationTitle')
+            project_link.click()
+            time.sleep(2)
+            project_window = driver.window_handles[1]
+            driver.switch_to_window(project_window)
+            project_details_link = driver.find_element_by_xpath('//*[@id="projdetailsId"]')
+            project_details_link.click()
+            time.sleep(4)
+            try:
+                print('we here!')
+                project_company = driver.find_element_by_xpath('//*[@id="projectDetails"]/div[1]/div[2]/table/tbody/tr[3]/td[2]').text
+                print('did this run?')
+            except Exception as error:
+                print('are we here?')
+                print(error)
+                project_company = 'None'
+            project_loan = driver.find_element_by_xpath('//*[@id="projectDetails"]/div[1]/div[2]/table/tbody/tr[5]/td[2]').text
+            sectors = driver.find_elements_by_xpath('//*[@id="projectDetails"]/div[2]/div[1]/div')
+            sector_range = (1, len(sectors))
+            sector_list = []
+            for i in sector_range:
+                sector = driver.find_element_by_xpath('//*[@id="projectDetails"]/div[2]/div[1]/div[%s]/div/div/div[1]' % i).text
+                sector_list.append(sector)
+            issues = driver.find_elements_by_xpath('//*[@id="accordion_theme"]/div')
+            issue_range = range(1, len(issues)+1)
+            issue_list = []
+            for i in issue_range:
+                issue = driver.find_element_by_xpath('//*[@id="accordion_theme"]/div[%s]/div[1]/span' % i).text
+                issue_list.append(issue)
+            driver.close()
+            driver.switch_to_window(complaint_window)
         except Exception as error:
-            print('are we here?')
-            print(error)
-            project_company = 'None'
-        project_loan = driver.find_element_by_xpath('//*[@id="projectDetails"]/div[1]/div[2]/table/tbody/tr[5]/td[2]').text
-        sectors = driver.find_elements_by_xpath('//*[@id="projectDetails"]/div[2]/div[1]/div')
-        sector_range = (1, len(sectors))
-        sector_list = []
-        for i in sector_range:
-            sector = driver.find_element_by_xpath('//*[@id="projectDetails"]/div[2]/div[1]/div[%s]/div/div/div[1]' % i).text
-            sector_list.append(sector)
-        issues = driver.find_elements_by_xpath('//*[@id="accordion_theme"]/div')
-        issue_range = range(1, len(issues)+1)
-        issue_list = []
-        for i in issue_range:
-            issue = driver.find_element_by_xpath('//*[@id="accordion_theme"]/div[%s]/div[1]/span' % i).text
-            issue_list.append(issue)
-        driver.close()
-        driver.switch_to_window(complaint_window)
+            print (error)
+            print ('No project link')
         row_data = [
             'Panel',
             year,
@@ -198,13 +200,10 @@ def inspection_panel_scrape(driver, writer):
             cr_end_date,
             monitoring_start_date,
             monitoring_end_date,
-            cr_report,
             date_closed,
             None,# attached_documents,
             driver.current_url,
-            None,
-            None,
-            None,
+            cr_report
         ]
         writer.writerow(row_data)
         print(row_data)
