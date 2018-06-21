@@ -42,6 +42,10 @@ Major areas for improvement include
        mici-scraper.ipynb
     ```
 
+**Getting Started**
+We suggest working in a small group on a specific site, take a look at the site, review the AC scraper, check what it looks like with/without javascript, review data model, and start coding !
+
+
 #### strategy for a new scraper
     * have a common set of fields (common model) for all the scrapers [Master scraper]
     * store the list of projects as dataframe
