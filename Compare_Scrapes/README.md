@@ -11,6 +11,22 @@
     **Diff Analysis**
     ```
     Diff_Analysis\
-       [BEN 2 Fill IN]
+       Complaint_Data_Scraped.xlsx
+       Complaint_Data_Scraped_diff.xlsx
+       example_output.xlsx
     ```
+
+## b)  Requirements
+* Must work with any results file
+* Column name agnostic
+* Records summary of changes
+
+## c) Data Summary
+`Complaint_Data_Scraped.xlsx` contains the output of the existing scrapers, while `Complaint_Data_Scraped_diff.xlsx` is the same output with a subset of columns in 4 of the 5 sheets permuted. The code used to produce the second file is saved in `../_Admin/Setup/Notebooks/diff_data.ipynb`. The altered columns in each sheet are
+* Panel - 'Filing Date', 'Date Closed'
+* EIB - 'Dispute Resolution End Date', 'Documents'
+* MICI - 'Compliance Review Start Date', 'Date Closed'
+* CAO - 'Monitoring Start Date', 'Monitoring End Date'
+* ADB - No changes
+
     
