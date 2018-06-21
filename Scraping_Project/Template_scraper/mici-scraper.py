@@ -1,12 +1,17 @@
 
-# coding: utf-8
-#!/usr/bin/env python
+
+# # Scraper for the MICI website
 
 import requests
 from bs4 import BeautifulSoup
 import pandas as pd
 
+
 base_url = "https://idblegacy.iadb.org/en/mici/by-country,7631.html?status=&country=url.country&yearDate=&page="
+
+
+
+
 
 def get_page_content(url):
     """
@@ -16,6 +21,10 @@ def get_page_content(url):
     page_content = BeautifulSoup(page.content, 'html.parser')
     return page_content
 
+
+
+
+
 def get_last_page_number():
     """
         Finds the last page number in the pagination to help in navigation of projects
@@ -23,6 +32,10 @@ def get_last_page_number():
     url = "https://idblegacy.iadb.org/en/mici/by-country,7631.html"
     page_content = get_page_content(url)
     return page_content.find('a',text='Last ')['href'].split('=')[-1]
+
+
+
+
 
 def get_project_links(url):
     """
@@ -32,6 +45,10 @@ def get_project_links(url):
     page_content = get_page_content(url)
     search_results = page_content.find(id="searchResults")
     return search_results.find_all('li')
+
+
+
+
 
 def get_project_name_and_id(link):
     """
@@ -51,6 +68,10 @@ def get_project_name_and_id(link):
     project_id = project_link_text.split("(")[1].replace(")","").strip()
     return project_name, project_id
 
+
+
+
+
 def get_country_year_info(link):
     """
         given the project link, finds the country and year info from a div element inner to it.
@@ -67,6 +88,10 @@ def get_country_year_info(link):
     country_year_info = div.find_all('span')[0].getText()
     return country_year_info.split("-")
 
+
+
+
+
 def get_project_status(link):
     """
         given the project link, extracts the status info from it.
@@ -81,6 +106,10 @@ def get_project_status(link):
     status = div.find_all('span')[1].getText().split(":")[1].strip()
     return status
 
+
+
+
+
 def get_detailed_project_url(link):
     """
         Generates the link to the individual project given the <a href></a> element
@@ -93,6 +122,10 @@ def get_detailed_project_url(link):
     href = link.find('a').get('href')
     return base_url + href
     
+
+
+
+
 
 def get_additional_project_info(project_page):
     """
@@ -121,6 +154,9 @@ def get_additional_project_info(project_page):
     return additional_project_info
 
 
+
+
+
 def update_additional_project_info(additional_project_info, project_details):
     """
         Updates the project details object with the additional project information 
@@ -135,6 +171,10 @@ def update_additional_project_info(additional_project_info, project_details):
     project_details["financial_institution"] = None
     project_details["financing"] = additional_project_info.get("IDB Financing:")
     project_details["related_project_number"] = additional_project_info.get("Other related projects:")
+
+
+
+
 
 def get_stage_names(project_year):
     """
@@ -154,6 +194,11 @@ def get_stage_names(project_year):
         return ["DR-Eligibility", "Assessment", "Consultation Phase Exercise", "DR-Monitoring", "CR-Eligibility",
                       "Preparation of TORs", "Investigation", "Panel Report", "CR-Monitoring"]
         
+
+
+
+
+
 def get_project_stage_elements(project_year, project_page):
     """
         The html elements that have the project stage information is different for project before and after 2014.
@@ -172,6 +217,11 @@ def get_project_stage_elements(project_year, project_page):
                 project_stage_elements.append(stage_div)
     return project_stage_elements
             
+    
+
+
+
+
 
 def get_completed_stage_css_class(project_year):
     """
@@ -183,7 +233,10 @@ def get_completed_stage_css_class(project_year):
         return ["sltgray", "sltgray", "sltgreen", "sltgreen", "sltgreen", "cuadro_dw_azul",
                                      "cuadro_dw_azul", "cuadro_dw_azul", "cuadro_dw_azul"]
     else:
-        return ["cuadro_up_ok" for i in xrange(9)]
+        return ["cuadro_up_ok" for i in range(9)]
+
+
+
 
 
 def get_project_stages_current_state(project_year, project_page):
@@ -196,11 +249,14 @@ def get_project_stages_current_state(project_year, project_page):
     project_stage_elements = get_project_stage_elements(project_year, project_page)
     completed_stage_css_class = get_completed_stage_css_class(project_year)
     
-    for i in xrange(len(project_stage_elements)):
+    for i in range(len(project_stage_elements)):
         if completed_stage_css_class[i] in project_stage_elements[i].get('class'):
             project_stages_current_state[stage_names[i]] = True
 
     return project_stages_current_state
+
+
+
 
 
 def update_stage_info(stage, start_date_key, end_date_key, project_stages_current_state, project_details):
@@ -219,6 +275,10 @@ def update_stage_info(stage, start_date_key, end_date_key, project_stages_curren
     if project_stages_current_state.get(end_date_key):
         project_details[stage + "_end_date"] = "completed"   
     
+
+
+
+
 
 def update_project_stage_completion_info(project_year, project_stages_current_state, project_details):
     """
@@ -262,10 +322,15 @@ def update_project_stage_completion_info(project_year, project_stages_current_st
     return project_stage_completetion_info
         
     
+
+
+
+
+
 project_list = []
 last_page_number = int(get_last_page_number())
 
-for page_number in xrange(1, last_page_number):
+for page_number in range(1, last_page_number):
     
     url = base_url + str(page_number)
     
@@ -283,10 +348,11 @@ for page_number in xrange(1, last_page_number):
 
         # update country, year info
         project_details["country"], project_details["year"] = get_country_year_info(link)
+        project_details["year"] = int(project_details["year"])
         
-        print "scraping project details for:"
-        print project_details["project_name"]
-        print project_details["country"], project_details["year"]
+        print("scraping project details for:")
+        print(project_details["project_name"].strip())
+        print(project_details["country"], project_details["year"])
         
         # hack 
         if project_details["project_id"] == "MICI-AR-2015-0084":
@@ -318,7 +384,7 @@ for page_number in xrange(1, last_page_number):
         
         project_list.append(project_details)
         
-        print "************************************************************************************"
+        print("************************************************************************************")
         
 
 
