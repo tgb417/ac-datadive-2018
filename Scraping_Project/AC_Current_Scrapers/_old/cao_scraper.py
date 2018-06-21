@@ -7,6 +7,7 @@ import unicodecsv
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.common.exceptions import NoSuchElementException
+from accountability_console.models import Complaint, IAM
 
 def scrape():
     with open('cao_scraped.csv', 'wb') as file:
@@ -40,13 +41,9 @@ def scrape():
             'Compliance Review End Date',
             'Monitoring Start Date',
             'Monitoring End Date',
-            'Compliance Report Issued?',
             'Date Closed',
             'Documents',
-            'Hyperlink',
-            'Project Date',
-            'Project Status',
-            'Project Description',
+            'Hyperlink'
         ]
         writer.writerow(header)
         driver = webdriver.Chrome()
@@ -171,13 +168,9 @@ def cao_scrape(driver, writer):
                         cr_end_date,
                         None,
                         monitoring_end_date,
-                        None,
                         date_closed,
                         None,
                         driver.current_url,
-                        None,
-                        None,
-                        None,
                     ]
                     writer.writerow(row_data)
                     print(row_data)

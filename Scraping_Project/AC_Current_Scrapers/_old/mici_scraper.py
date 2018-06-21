@@ -40,13 +40,9 @@ def scrape():
             'Compliance Review End Date',
             'Monitoring Start Date',
             'Monitoring End Date',
-            'Compliance Report Issued?',
             'Date Closed',
             'Documents',
             'Hyperlink',
-            'Project Date',
-            'Project Status',
-            'Project Description',
         ]
         writer.writerow(header)
         driver = webdriver.Chrome()
@@ -251,13 +247,9 @@ def mici_scrape(driver, writer):
                 cr_end_date,
                 monitoring_start_date,
                 monitoring_end_date,
-                None,
                 date_closed,
                 None,
                 driver.current_url,
-                None,
-                None,
-                None,
             ]
             writer.writerow(row_data)
             print(row_data)
