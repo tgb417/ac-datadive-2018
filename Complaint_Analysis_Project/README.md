@@ -79,7 +79,9 @@ Think of this section as warm-up exercises to consider as you dig in to the data
 
 ## What to Do with Your Work
 
-Throughout the weekend, as you come up with insights, visualizations, or anything you find to be interesting about the data, please upload them to the AC Slack channel along with any code you used to generate them. AC is interested in reproducing this work, so the easier we can make it for them, the better!
+Throughout the weekend, as you come up with insights, visualizations, or anything you find to be interesting about the data, please upload them to the [Project Page](https://docs.google.com/document/d/1cOjGz7mkF945cgqEgjbj6i8lIAkadGwmj1FBwj94awc/edit#) and [Slack](https://tinyurl.com/AC-slack). 
+
+Also **PLEASE** upload all code to the [AC Drive](https://tinyurl.com/ac-DDmaterials),  AC is interested in reproducing this work, so the easier we can make it for them, the better!
 
 I will be checking in with you periodically throughout the day to get updates on your findings and provide assistance if needed. Please do not hesitate to ask if you have any questions.
 
