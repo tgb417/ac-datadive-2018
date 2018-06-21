@@ -1,0 +1,225 @@
+"Category","Benchmark","AfDB_IRM","ADB_SPF_CRP","EBRD_PCM","EIB_CM","IFC_CAO","IDB_MICI","OPIC_OA","WB_Panel"
+"Budget","Does the mechanism prepare its own budget?","1","THE SPF'S BUDGET IS PROCESSED IN THE SAME WAY AS OTHER ADB DEPARTMENTS.
+THE CRP'S BUDGET IS PREPARED BY THE CRP CHAIR, ENDORSED BY BCRC IN CONSULTATION WITH THE PRESIDENT, REVIEWED BY THE BOARD'S BUDGET REVIEW COMMITTEE, AND APPROVED BY THE BOARD.","1","1","0","1",,
+"Budget","Is the mechanism's budget approved by the Board?",,"THE SPF'S BUDGET IS PROCESS IN THE SAME WAY AS OTHER ADB DEPARTMENTS. THE CRP'S BUDGET IS PREPARED BY THE CRP CHAIR, ENDORSED BY BCRC IN CONSULTATION WITH THE PRESIDENT, REVIEWED BY THE BOARD'S BUDGET REVIEW COMMITTEE, AND APPROVED BY THE BOARD.",,,"0","1",,
+"Budget","May the mechanism request additional funds if needed?",,"CRP, YES. FOR THE SPF, ANY ADDITIONAL HUMAN AND FINANCIAL RESOURCES FOR THE OSPF, IF REQUIRED, WILL BE APPROVED THROUGH THE WORK PROGRAM AND BUDGET PROCESS OR BY THE PRESIDENT.",,,"1","1",,
+"Compliance review findings or recommendations","Are claimants informed of draft findings before a report is made to the President / Board?","0","1","1","1","0","1","0","0"
+"Compliance review findings or recommendations","Are draft findings made available to claimant?","0","1","1","1","0","1","0",
+"Compliance review findings or recommendations","Are draft findings made available to management?","1","1","1","1","1","1","1",
+"Compliance review findings or recommendations","Are draft recommendations made available to claimant?","0",,"1","1",,"1","0",
+"Compliance review findings or recommendations","Are draft recommendations made available to management?","1",,"1","1",,"1","1",
+"Compliance review findings or recommendations","May claimants make comments on draft findings?","0","1","0","1","0","1","0",
+"Compliance review findings or recommendations","May claimants make comments on draft recommendations?","0",,"1","1",,"1","0",
+"Compliance review findings or recommendations","May management make comments on draft findings?","1","1","1","1","1","1","1",
+"Compliance review findings or recommendations","May management make comments on draft recommendations?","1",,"1","1",,"1","1",
+"Confidentiality of claimants and their information","Are the parties' confidential documents protected from disclosure?","1","1",,"1","1","1","1","1"
+"Confidentiality of claimants and their information","Is the mechanism bound by the international institution's confidentiality/disclosure policies?","1",,"1","1","1","1","1",
+"Confidentiality of claimants and their information","Is there a timely opportunity to withdraw a claim if it cannot be kept confidential?","1",,"1",,,,,
+"Confidentiality of claimants and their information","May claims be filed anonymously?","0","0","0","0","0","0","0","0"
+"Confidentiality of claimants and their information","May claims be filed in a way that maintains confidentiality?","1","1","1","1","1","1","1","1"
+"Confidentiality of claimants and their information","Must a request be made for confidentiality?","1","0","1","0","1","1","1","1"
+"Decision-making During the Mechanism's Process","Does the mechanism decide eligibility independent of institution staff?","1","1","1","1","1","1","1","1"
+"Decision-making During the Mechanism's Process","Does the mechanism decide eligibility independent of the Board? ","PROBLEM SOLVING, YES; COMPLIANCE REVIEW, NO","YES (SPF); NO (CRP).","1","1","1","1","1",
+"Decision-making During the Mechanism's Process","Does the mechanism decide eligibility independent of the President? ","PROBLEM SOLVING, YES; COMPLIANCE REVIEW, NO","1","0","1","1","1","1","1"
+"Decision-making During the Mechanism's Process","Does the mechanism issue follow-up monitoring reports independently?","PROBLEM SOLVING, YES; COMPLIANCE REVIEW, NO
+THE BOARDS OR THE PRESIDENT CAN DECIDE NOT TO HAVE THE CRMU DIRECTOR AND IRM EXPERT MONITOR A COMPLIANCE REVIEW CASE.","YES (SPF/PS) / NO (CRP)","1","0","1","0","1",
+"Decision-making During the Mechanism's Process","Does the mechanism report re outcomes independent of institution staff?","1","1","0","1","1","1","1","1"
+"Decision-making During the Mechanism's Process","Does the mechanism report re outcomes independent of the Board?","1","YES (SPF) / NO (CRP).","1","1","1","0","1","1"
+"Decision-making During the Mechanism's Process","Does the mechanism report re outcomes independent of the President?","1","1","1","1","DR, YES; CR, NO.","1","1","1"
+"Decision-making During the Mechanism's Process","Might the mechanism require Pres/management approval at any stage in the process?","1","1","1","1","1","0","1",
+"Decision-making During the Mechanism's Process","To whom does the mechanism report (in terms of information re and approval of reports)?","BOARDS FOR ONGOING PROJECTS; PRESIDENT FOR PROJECTS BEFORE APPROVAL.","PRESIDENT (SPF), BOARD (CRP). SPF REPORTS ARE ALSO PROVIDED TO THE BOARD FOR INFORMATION.","PRESIDENT / BOARD (FOR PROJECTS THAT DO NOT REQUIRE BOARD APPROVAL OR WHICH HAVE NOT YET BEEN BOARD APPROVED)","MANAGEMENT COMMITTEE OR THE EIF CHIEF EXECUTIVE (EIF-RELATED COMPLAINTS). ANNUAL ACTIVITY REPORTS ARE SUBMITTED TO THE BOARD OF DIRECTORS. THE CM ALSO PROVIDES COMPLAINT UPDATES TO THE CHAIRMAN OF THE AUDIT COMMITTEE.","PRESIDENT. THE BOARD IS ALSO PROVIDED INFORMATION.","BOARD AND DONORS COMMITTEE (FOR MULTILATERAL INVESTMENT FUND)","PRESIDENT & CEO BOARD","BOARD"
+"Delivery of the claim","Are there clear instructions to the institution staff to deliver any claim received?","1","1","1","1","0","1",,"1"
+"Delivery of the claim","If sent by fax or email, must an original copy of the request be sent by mail?","0","0","0","0","0","0","0",
+"Delivery of the claim","May the claim be delivered at the institution's regional office?","1","1","1","1","0","1",,"1"
+"Delivery of the claim","May the claim be delivered at the local/Country Office level?","1","1","1","1","0","1",,"1"
+"Delivery of the claim","May the claim be delivered by mail?","1","1","1","1","1","1","1","1"
+"Delivery of the claim","May the claim be delivered in person?","1","1","1","1","1","1","1",
+"Delivery of the claim","May the claim be delivered through email?","1","1","1","1","1","1","1","1"
+"Determination of which function to use","How long does it take to determine which function to use?","PROBLEM SOLVING: 5 DAYS AFTER MANAGEMENT RESPONSE; COMPLIANCE REVIEW: APPROXIMATELY 30 DAYS AFTER MANAGEMENT RESPONSE","31","40","60","120","CONSULTATION PHASE (PS): 40 BUSINESS DAYS FROM THE DATE OF DETERMINATION OF ELIGIBILITY; COMPLIANCE REVIEW: 36 BUSINESS DAYS PLUS BOARD APPROVAL THROUGH SHORT PROCEDURES","WITHIN 80 DAYS OF ELIGIBILITY DETERMINATION.",
+"Determination of which function to use","When are the affected parties notified of the course of action to be taken?","""PROMPTLY""","33","40","NO PROVISION.","135","CONSULTATION PHASE (PS): 40 BUSINESS DAYS FROM THE DATE OF DETERMINATION OF ELIGIBILITY; COMPLIANCE REVIEW: 36 BUSINESS DAYS PLUS BOARD APPROVAL THROUGH SHORT PROCEDURES MICI IDB, H.29, P.15; I.39-41, P.17; MICI IIC, H.29, P.11; I.39-41, P.13","WITHIN 80 DAYS OF ELIGIBILITY DETERMINATION.","WITHIN 2 WEEKS OF ELIGIBILITY DETERMINATION BY THE BOARD.  APPROX. 77 DAYS AFTER RECEIPT. REGISTRATION:15 DAYS; MANAGEMENT RESPONSE: 21 DAYS; TECHNICAL ELIGIBILITY AND RECOMMENDATION: 21 DAYS; BOARD VOTE: 10 DAYS; NOTIFICATION: 2 WEEKS (ASSUMING 10 BUSINESS DAYS)."
+"Determination of which function to use","Who determines eligibility to use the Compliance function?","PRESIDENT (BEFORE PROJECT APPROVAL); BOARDS (AFTER PROJECT APPROVAL)","BOARD AFTER CONSIDERING THE CRP'S RECOMMENDATION.
+ANY DEPARTMENT CAN OBJECT TO THE CRO'S DECISION TO FORWARD A COMPLAINT TO THE CRP, SPF, OR ANOTHER DEPARTMENT. THE CRO WILL THEN SEEK CLARIFICATION FROM THE COMPLAINANT.","ELIGIBILITY ASSESSORS (PCM OFFICER AND PCM EXPERT)","CM HEAD - FOR ENVIRONMENTAL AND SOCIAL IMPACTS, AND GOVERNANCE COMPLAINTS, THE CM HEAD DECIDES ON THE ACTION, WITH THE AGREEMENT OF THE INSPECTOR GENERAL. IN GENERAL, THE STARTING POINT IS COMPLIANCE REVIEW.","CAO","BOARD (OR DONORS COMMITTEE FOR MIF), AFTER CONSIDERING MICI'S RECOMMENDATION","OA","BOARD UPON PANEL'S RECOMMENDATION"
+"Determination of which function to use","Who determines eligibility to use the Problem-Solving function?","CRMU DIRECTOR","SPF: ANY DEPARTMENT CAN OBJECT TO THE CRO'S DECISION TO MOVE FORWARD WITH A COMPLAINT TO THE CRP, SPF, OR ANOTHER DEPARTMENT. THE CRO WILL THEN SEEK CLARIFICATION FROM THE COMPLAINANT.","PRESIDENT",,"CAO. PARTIES MUST AGREE.","MICI","OA",
+"Determination of which function to use","Who determines whether to use the Advisory function?","PRESIDENT OR BOARDS (CRMU DIRECTOR MAY SUBMIT A RECOMMENDATION)",,,"NO PROVISION.","CAO VICE PRESIDENT OR REQUEST FROM PRESIDENT OR IFC/MIGA SENIOR MANAGEMENT.",,,
+"Eligibility requirements","May a claim request use of a specific function (compliance, dispute, advisory)?","1","1","1","1","1","1","1",
+"Eligibility requirements","May the mechanism waive a prior attempted resolution requirement if dangerous or futile?",,,"1","1",,,"1",
+"Eligibility requirements","Must a representative explain why no one in the community can represent claimant?","1","1","0","0","0","0","0","1"
+"Eligibility requirements","Must a representative present written confirmation of authority of the claimant?","1","1","1","0","1","1","1","1"
+"Eligibility requirements","Must the claim allege causal links between the institution's noncompliance and the harm?","1","0","0","0","0","1","0","1"
+"Eligibility requirements","Must the claim allege material harm? ","1","0","0","0","0","1","0","1"
+"Eligibility requirements","Must the claim allege specific violations of the institution's policies and procedures?","0","0","0","0","0","1","0","0"
+"Eligibility requirements","Must the claim describe attempts to resolve concerns with other relevant parties as well?","0","0","1","0","0","0","1","0"
+"Eligibility requirements","Must the claim describe the claimant's attempts to resolve its concerns before filing claim?","0","1","1","1","0","1",,"1"
+"Eligibility requirements","Must the claim list all of the claimants?","1","1","1",,"1","1","1","1"
+"Eligibility requirements","Must the claim suggest remedies?","0","0","0","1","0","0","0","0"
+"Final Decisions","Who makes final decision about the outcome of a claim?","PRESIDENT (BEFORE PROJECT APPROVAL); BOARDS (AFTER PROJECT APPROVAL)","SPF: PARTIES SIGN AGREEMENT FOR PS, PROJECT CHANGES REQUIRE ADB APPROVAL AND BORROWER AGREEMENT / CRP: BOARD MUST APPROVE MEETING ACTION PLAN, BORROWER MUST AGREE.","CR- BOARD AND PRESIDENT; PS - PARTIES OR PROBLEM-SOLVING EXPERT	
+FOR COMPLIANCE REVIEW, THE BOARD HAS THE FINAL DECISION REGARDING MANAGEMENT ACTION PLAN (MAP), IF THE PROJECT HAS BEEN APPROVED BY THE BOARD. OTHERWISE, THE PRESIDENT HAS THE FINAL DECISION ON MAP.","MANAGEMENT COMMITTEE","DISPUTE RESOLUTION: PARTIES; COMPLIANCE REVIEW, PRESIDENT","BOARD","PRESIDENT AND CEO/MANAGEMENT","BOARD"
+"Form of a claim","Is a model or online form for the claim provided by the mechanism?","1","1","1","1","1","1","1","1"
+"Form of a claim","Must the claim be in writing?","1","1","1","1","1","1","1","1"
+"Functions","Does mechanism have a Compliance Review function?","1","1","1","1","1","1","1","1"
+"Functions","Does mechanism have a Problem-Solving or Dispute Resolution function?","1","1","1","1","1","1","1","0"
+"Functions","Does mechanism have an Advisory function?","1","0","0","1","1","0",,"0"
+"Initial screening and response to a claim","Does acceptance of a claim entail a preliminary investigation by the mechanism?","1","1","0","1","1","1","1","1"
+"Initial screening and response to a claim","Does the claimant have a time period to respond to a rejected claim?",,,"1",,"0","1",,
+"Initial screening and response to a claim","Does the mechanism inform claimants why their claims failed?","1",,"1","1","1","1","1",
+"Initial screening and response to a claim","How long does it take the mechanism to determine whether to register the claim?","14","2","10","10","15","5","20","UP TO 15 DAYS. NOTE THAT IF THE PILOT APPROACH (ANNEX 1, PP. 24-25) IS UTILIZED, THE REGISTRATION DETERMINATION WILL TAKE LONGER."
+"Initial screening and response to a claim","If request is registered, must the relevant department respond to the request?","1","SPF, NO; CRP, YES. THE SPF TAKES 21 DAYS TO DETERMINE ELIGIBILITY AFTER RECEIVING THE COMPLAINT FROM THE CRO. THE PROCESS CAN TAKE MORE TIME IF ANY DEPARTMENT OBJECTS TO THE CRO'S DECISION ON WHERE TO FORWARD THE COMPLAINT.","1","0","0","1","0","1"
+"Initial screening and response to a claim","If the request is outside the mechanism's scope, will it be referred to another department?",,"1","1","1","1","1","1",
+"Initial screening and response to a claim","Is the Board of Directors notified that a claim has been filed?","0","0","0","0","0","1",,"1"
+"Initial screening and response to a claim","Is the head of the institution notified that a claim has been filed?","1","0","0","0","0","0","1","1"
+"Initial screening and response to a claim","Is the head of the institution notified when the mechanism registers a claim?","0","0","1","0","0","0","0","1"
+"Initial screening and response to a claim","Is the relevant department given an opportunity to cure the concern?",,"1","PS= YES. CR= NO
+FOR PS, GIVEN AN OPPORTUNITY IF COMPLAINANTS DID NOT MAKE GOOD FAITH EFFORTS AND DID NOT PROVIDE AN EXPLANATION OF WHY SUCH EFFORTS WERE NOT POSSIBLE.","1",,"1","1","1"
+"Initial screening and response to a claim","Is there an immediate acknowledgement that the claim has been received (within 5 days)?","0","W/IN 2 DAYS","1","0","1","1","1",
+"Initial screening and response to a claim","May the claimant submit a revised request later in the process?","1","1","1",,,,"NOT CLEAR WHETHER PARA. 4.2.3 ALLOWS FOR THE REVISION OF A CURRENT REQUEST OR JUST APPLIES TO A RESUBMITTED COMPLETED REQUEST.",
+"Initial screening and response to a claim","Must the mechanism submit a copy of the claim to the head of the institution?","0","0","1","0","0","0","PRESIDENT IS PROVIDED WITH ELIGIBILITY AND ASSESSMENT INFORMATION.","0"
+"Initial screening and response to a claim","Upon submission of the revised request, will the process begin again?","1","1","0",,,,,
+"Initial screening and response to a claim","Will the mechanism seek additional information if the claim is incomplete?","1","1","1","1","1","1","1","1"
+"Investigation authority during compliance review","Does the mechanism have independent authority to appoint investigators?","1","1","1","1","1","1","1","1"
+"Investigation authority during compliance review","Does the mechanism have the independent authority to accept and conduct CR?","0","0","1","1","1","0","1","0"
+"Investigation authority during compliance review","Is a time frame or limit established for the CR investigation phase?","0","1","0","1","0","1","1","1"
+"Investigation authority during compliance review","Is the CR conducted by the mechanism staff, independent experts/panelists, or both?","EXPERTS","STAFF","EXPERTS","BOTH","BOTH","BOTH","BOTH","BOTH"
+"Investigation authority during compliance review","May mechanism interview relevant staff?","1","1","1","1","1","1","1","1"
+"Investigation authority during compliance review","May the mechanism hold public meetings with local representatives?","1",,"1","1","1",,,"1"
+"Investigation authority during compliance review","May the mechanism interview relevant government or project officials?","1","1","1","1","1",,"1","1"
+"Investigation authority during compliance review","May the mechanism request all relevant documents?","1","1","1","1","1","1","1","1"
+"Judicial and Parallel Proceedings","Does the policy contain restrictions concerning past or ongoing IAM proceedings?","1","0","1","0","0","0","0","0"
+"Judicial and Parallel Proceedings","Does the policy contain restrictions concerning past or ongoing judicial, arbitral, or administrative proceedings?","1","0","1","1","0","1","0","0"
+"Judicial and Parallel Proceedings","May the mechanism jointly address claims regarding the same project with another IAM ?",,"1","1","1","1","1","1","1"
+"Languages of the claim","By default, will the mechanism respond in the language of the request?","1",,"1","1","1","0","1",
+"Languages of the claim","Can translation of a claim delay the mechanism's timeframe?","1","1","1","1","1","1","1","1"
+"Languages of the claim","May the claim be filed in any language?","1","0","0","0","1","1","1","1"
+"Languages of the claim","Upon request, will the mechanism respond in the language of the request?","1",,"1","1","1",,"1",
+"Mechanism Reporting Structure","To whom does the mechanism report (with in the inst. organizational structure)?","BOARDS OF DIRECTORS OF THE AFRICAN DEVELOPMENT BANK AND THE AFRICAN DEVELOPMENT FUND.","PRESIDENT (SPF) / BOARD (CRP). THE CRP REPORTS TO THE BOARD THROUGH THE BOARD COMPLIANCE REVIEW COMMITTEE.","1","INSPECTORATE GENERAL - FINAL CONCLUSIONS REPORTS ARE SUBMITTED TO THE MANAGEMENT COMMITTEE OR TO THE EIF CHIEF (EIF RELATED COMPLAINTS).","PRESIDENT","BOARD","PRESIDENT & CEO.","BOARD"
+"Mechanism Staff","Are mechanism staff members forbidden from working on projects with a conflict of interest?",,"NO PROVISION.",,,"1","1",,
+"Mechanism Staff","Does management or the Board have say over selection and approval of additional staff?",,"1",,,"0","0",,
+"Mechanism Staff","Does management/ the President hire the head or director?","1","SPF, YES (APPOINTED BY PRESIDENT) / CRP, NO (IS CONSULTED)","1",,"1","0","1","1"
+"Mechanism Staff","Does the Board hire the head or director?","1","SPF, NO / CRP, YES (IS CONSULTED)","0",,"0","1","0","1"
+"Mechanism Staff","Does the mechanism have a dedicated head or director of operations?","1","1","1","1","1","1","1","1"
+"Mechanism Staff","Does the mechanism have dedicated staff in addition to the head or director?","1","1","1","1","1","1","1","1"
+"Mechanism Staff","Does the mechanism have full time staff (can include the director)?","1","1","1",,"1","1",,"1"
+"Mechanism Staff","Does the mechanism's policy require independent recruitment of its staff?",,"0","0",,"1","1","0","0"
+"Mechanism Staff","Is there a bar on mechanism staff having worked for the institution previously? How long?",,"0","0",,"0","1",,
+"Mechanism Staff","Is there a bar on the head or director having worked for the institution previously? How long?","1","1","1",,"0","1",,"1"
+"Mechanism Staff","Is there a time limit on the contract for the head or director?","1","1","1",,"1","1",,"1"
+"Mechanism Staff","May mechanism staff be employed by the institution after working for mechanism?","CRMU DIRECTOR, NO; OTHER STAFF, UNKNOWN","1","0",,,"0",,
+"Monitoring and Follow-up of Outcomes of Mechanism Process","Are follow-up reports made public?",,"1","1","0","1","1","1",
+"Monitoring and Follow-up of Outcomes of Mechanism Process","Are follow-up reports required to be written in consultation with management or the project sponsor?","PROBLEM SOLVING, NO; COMPLIANCE REVIEW, YES","YES (SPF); NO (CRP). THE CRP MAY CONSULT WITH MANAGEMENT OR THE PROJECT SPONSOR, BUT THIS IS NOT REQUIRED.","1","1","0","0","PS: YES; CR: NO.",
+"Monitoring and Follow-up of Outcomes of Mechanism Process","Are follow-up reports required to be written in consultation with the claimants?","1","YES (SPF) / NO (CRP). THE CRP MAY CONSULT WITH COMPLAINANTS, BUT THIS IS NOT REQUIRED.","1","0","1","0","PS: MONITORING IS BASED ON AGREEMENT OF THE PARTIES; CR: NO.",
+"Monitoring and Follow-up of Outcomes of Mechanism Process","Is there a frequency with which follow up reports must be released?","PROBLEM SOLVING, NO; COMPLIANCE REVIEW, YEARLY","1","1","1","0","1","PS: MONITORING BASED ON AGREEMENT OF PARTIES; CR: ANNUALLY.",
+"Monitoring and Follow-up of Outcomes of Mechanism Process","May the mechanism monitor implementation of changes?","1","1","1","1","1","PS: YES, PLAN CONSIDERED BY BD / CR: YES","CR: YES, PS: MONITORING BASED ON AGREEMENT OF PARTIES.","0"
+"Monitoring and Follow-up of Outcomes of Mechanism Process","May the mechanism report on the follow-up monitoring?","1","1","1","1","1","PS: YES, ANNUALLY TO BD","1",
+"Operational Independence","Does the mechanism have its own office?","1","1","0","0","1","1","1","1"
+"Operational Independence","Does the mechanism have its own staff?","1","1","1","1","1","1","1","1"
+"Outcomes of the Compliance Review or Problem-solving Initiative","Are the mechanisms' recommendations or findings made public after decision is made?","1",,"1","1","1","1","1","1"
+"Outcomes of the Compliance Review or Problem-solving Initiative","Does extension of an investigation require approval of the head of the institution?","0","0","0","0","0","0","0","0"
+"Outcomes of the Compliance Review or Problem-solving Initiative","May the investigation be extended beyond the established time frame if necessary?","1","1","1","1","1","1","1","1"
+"Outcomes of the Compliance Review or Problem-solving Initiative","May the mechanism conduct a site visit to communicate outcomes to the claimants?",,,,,,,,"1"
+"Outcomes of the Compliance Review or Problem-solving Initiative","May the mechanism make findings during compliance review?","1","1","1","1","1","1","1","1"
+"Outcomes of the Compliance Review or Problem-solving Initiative","May the mechanism make recommendations?","1","0","1","1","1","1","1","0"
+"Outcomes of the Compliance Review or Problem-solving Initiative","Must management issue an action plan in response to a finding of non-compliance?","1","1","1","0","0","1","1","1"
+"Outcomes of the Compliance Review or Problem-solving Initiative","Must management prepare an action plan in consultation with requestors? ","0","0","0","0",,"0","0","1"
+"Outcomes of the Compliance Review or Problem-solving Initiative","Must the relevant department respond to the mechanism's outcome report(s)?","1","1","1","1","1","0","1","1"
+"Preparation of the claim","Will staff from the mechanism meet with potential claimants?","1",,,,"1",,,
+"Preparation of the claim","Will the mechanism provide support in drafting or bringing a claim?","1",,"1",,"1","1","1","1"
+"Project-related scope and limitations of mechanism","Is the project suspended while the claim is brought?","0","0","0",,"0","0","0","0"
+"Project-related scope and limitations of mechanism","May a claim allege violation of all bank policies (except procurement/ fraud)?","1","1","0","1","1","0","0","1"
+"Project-related scope and limitations of mechanism","May a claim be brought against potential harm by an existing project?","1","1","1","1","1","1","1","1"
+"Project-related scope and limitations of mechanism","May the mechanism conduct compliance review for completed projects?","1","1","1","1","0","1","1","0"
+"Project-related scope and limitations of mechanism","May the mechanism conduct problem solving for completed projects?","1","1","1","1","0","1","1",
+"Project-related scope and limitations of mechanism","May the mechanism investigate a claim against multiple projects?",,,"0",,"1",,"CR: YES",
+"Project-related scope and limitations of mechanism","May the mechanism investigate project implementers (e.g., contractors)?","0","0","0","0","0","0","0","0"
+"Project-related scope and limitations of mechanism","May the mechanism investigate project sponsors (clients)?","0","0","0","0","0","0","0","0"
+"Project-related scope and limitations of mechanism","Must the claim be brought for direct harm by the institution?","1","1","0","0","0","1","0","0"
+"Public Access to the Mechanism/Outreach","Are annual reports published on the website?","1","1","1","1","1","1","1","1"
+"Public Access to the Mechanism/Outreach","Are documents on the website available in multiple languages?","1","1","1","1","1","1",,"1"
+"Public Access to the Mechanism/Outreach","Are guides distributed in the institution's areas of project operation?",,"1","1","1","1","OUTREACH ENVISIONED",,
+"Public Access to the Mechanism/Outreach","Are guides distributed through resident or country offices?",,"1","1","1","1","OUTREACH ENVISIONED",,
+"Public Access to the Mechanism/Outreach","Are guides pro-actively distributed to NGOs and civil society organizations?",,"1","1","1","1","OUTREACH ENVISIONED",,
+"Public Access to the Mechanism/Outreach","Are guides published in multiple languages?","1","1","1","1","1","1",,"1"
+"Public Access to the Mechanism/Outreach","Are public meetings held to inform people about the existence of the mechanism?",,"1","1","1","1","OUTREACH ENVISIONED",,"1"
+"Public Access to the Mechanism/Outreach","Does the mechanism have an official website?","1","1","1","1","1","1","1","1"
+"Public Access to the Mechanism/Outreach","Does the mechanism issue its own press releases and media communications?","1","1",,"1",,"1","NO  PROVISION.","1"
+"Public Access to the Mechanism/Outreach","Does the mechanism publish guides for how it may be used?","1","1","1","1","1","1",,
+"Public Access to the Mechanism/Outreach","Does the policy require that information be distributed to project sponsors re the mechanism?","1","1","1","0","1","0",,"0"
+"Public Access to the Mechanism/Outreach","Does the website provide documents related to the mechanism's operations?","1","1","1","1","1","1",,"1"
+"Public Access to the Mechanism/Outreach","Does the website provide updates on ongoing cases?","1","1","1","1","1","1","1","1"
+"Public Access to the Mechanism/Outreach","Is biographical data of the mechanism's investigators available on the website?","1","1","1","0","1","1",,
+"Public Access to the Mechanism/Outreach","Is information about the mechanism available at the institution's national or local offices?","0","1","1","1","1",,,
+"Refiling of requests","Does the mechanism's policy require new information to file a new request?","1","1","1","0",,"1","1","1"
+"Refiling of requests","May additional requests be filed on the same case or project?",,"1","1",,,,,
+"Refiling of requests","May rejected requests be revised and refiled?","1","1","1","1",,"1","1","1"
+"Refiling of requests","Must the new information have been unknown or unavailable at the time of earlier filing?","1","1","0",,,"1","0","1"
+"Right to Appeal","Is there a right to appeal the outcome to an independent higher authority?","0","0","0","1","0","0","0","0"
+"Sequencing issues - for mechanisms with dual functions","Are there exceptions allowing claimants to request compliance review if not otherwise allowed?",,,,,,,,
+"Sequencing issues - for mechanisms with dual functions","Does the mechanism staff determine which function to use?","0","1","1","1","1","0","1",
+"Sequencing issues - for mechanisms with dual functions","If both PS and CR are chosen, are the functions sequenced?","1","1","1","1","1","1","1",
+"Sequencing issues - for mechanisms with dual functions","If CR is sought, must PS occur first?","0","0","0","0","0","0","0",
+"Sequencing issues - for mechanisms with dual functions","May claimants directly request compliance review?","1","1","1","1","1","1","1",
+"Sequencing issues - for mechanisms with dual functions","May claimants directly request problem-solving?","1","1","1","1","1","1","1",
+"Sequencing issues - for mechanisms with dual functions","May the institution's Board of Directors request compliance review?","1","1",,,,,"1","1"
+"Sequencing issues - for mechanisms with dual functions","May the institution's management or the President request compliance review?","0",,,"1","1",,"1","0"
+"Sequencing issues - for mechanisms with dual functions","May the mechanism's staff or panelists/Experts request compliance review?","0",,,"1","1",,,"0"
+"Sequencing issues - for mechanisms with dual functions","May the two functions take place simultaneously?","0","0","0","0","0","0","0",
+"Sequencing issues - for mechanisms with dual functions","Must the President and/or Board approve transfer to the compliance review function from problem solving?","1","1","0","0","0","1","0",
+"Sequencing issues - for mechanisms with dual functions","Will having gone through PS satisfy eligibility req of good faith effort to resolve for compliance review?",,"0",,"0",,"0",,
+"Site visits","Are site visits allowed as part of the review of the eligibility investigation?",,,"1","1",,"1",,"1"
+"Site visits","Does the mechanism have authority to conduct site visits in the investigation stage?","1","1","1","1","1","1","1","1"
+"Site visits","Does the mechanism have to receive consent from the government for site visits?",,"1",,"0",,"1",,"1"
+"Site visits","Is at least one site visit at some stage required?","0","0","0",,"0","0","0","0"
+"Site visits","May site visits be conducted without government or opposing party presence?",,,,,,,,
+"Staffing of Panelists/ Experts","Are Panelists/Experts also employees of the international institution?",,"0","0","1","0","0","0","0"
+"Staffing of Panelists/ Experts","Are Panelists/Experts forbidden from working on projects with a conflict of interest?","1","1","1","1","1","1",,"1"
+"Staffing of Panelists/ Experts","Do external stakeholders have a say in the selection and approval of Panelists/ Experts?","0","0","1","0","0","0","0","0"
+"Staffing of Panelists/ Experts","Does the board approve the hiring of Panelists/Experts?","1","1","1","0","0","0","0","1"
+"Staffing of Panelists/ Experts","Does the mechanism select and approve the hiring of Panelists/Experts?","0","0","0","1","1","1","1","0"
+"Staffing of Panelists/ Experts","Does the mechanism use a Panel model or Roster of Experts model to conduct mechanism functions?","1","1","1","1","1","1","1","1"
+"Staffing of Panelists/ Experts","Does the President have a say over hiring of Panelists/Experts?","1","1","1","0","0","0","0","1"
+"Staffing of Panelists/ Experts","Is there a bar on Panelists/Experts having worked for the institution previously? How long?","1","1","1","0",,"NO SPECIFIC BAR, BUT EXPERTS MAY NOT COME FROM MANAGEMENT.","1","1"
+"Staffing of Panelists/ Experts","Is there a time limit on the contracts of the Panelists/Experts?","1","1","1",,"NO PROVISION",,,"1"
+"Staffing of Panelists/ Experts","Is there a transparent process for selection and approval of Panelists/Experts?","0","0","1","0","0","1","0","1"
+"Staffing of Panelists/ Experts","May Panelists/Experts be employed by the institution after working for mechanism? How long?","0","0","0","1","1",,,"0"
+"Staffing of Panelists/ Experts","May the Panelists/Experts be removed by the Board without cause?","0","0","0",,"NO PROVISION",,,"0"
+"Supplemental information and responses","Is the source of outside information kept confidential upon request?",,"1",,"1",,,"1",
+"Supplemental information and responses","May oral argument be used in support of a claim?","1","1","1","1","1",,"1","1"
+"Supplemental information and responses","May the institution's management formally respond to the claim?","1","1","1","1","1","1","1","1"
+"Supplemental information and responses","May the mechanism request additional information from the claimant?","1","1","1","1","1","1","1","1"
+"Supplemental information and responses","May the mechanism request and consider outside information?","1","1","1","1","1","1","1","1"
+"Supplemental information and responses","May the relevant project sponsor formally respond to the claim?",,,"1",,"1",,,"1"
+"Timeline for Handling Claims (in business days unless noted wth ""*"")","By when must a decision be made regarding eligibility?","26","SPF: APPROX. 52 DAYS; CRP: APPROX. 72 DAYS.
+
+THE SPF TAKES 21 DAYS TO DETERMINING ELIGIBILITY AFTER RECEIVING THE COMPLAINT FROM THE CRO. THE PROCESS CAN TAKE MORE TIME IF ANY DEPARTMENT OBJECTS TO THE CRO'S DECISION ON WHERE TO FORWARD THE COMPLAINT.","NO LATER THAN 40 DAYS AFTER THE SUBMISSION OF THE BANK MANAGEMENT RESPONSE TO THE COMPLAINT
+MANAGEMENT IS GIVEN 21 DAYS AFTER REGISTRATION TO SUBMIT WRITTEN RESPONSE","INITIAL ADMISSIBILITY DECISION TAKES 10 DAYS. THE ELIGIBILITY DECISION FOR COMPLIANCE REVIEW AND MEDIATION FOR COMPLAINTS ON ENVIRONMENTAL AND SOCIAL IMPACTS AND GOVERNANCE COMPLAINTS TAKES APPROXIMATELY 60 DAYS.","15 DAYS.","47","WITHIN 20 DAYS ACKNOWLEDGING A REQUEST.",
+"Timeline for Handling Claims (in business days unless noted wth ""*"")","Does the mechanism have policies governing time delays?","1","0","1","1","1",,"1","1"
+"Timeline for Handling Claims (in business days unless noted wth ""*"")","How long is the compliance review investigation stage?","ESTABLISHED IN TOR","200","TIMELINE IN EACH INDIVIDUAL TOR
+NO SET TIMELINE, BUT TIMELINES SET IN EACH TOR.","140","ESTABLISHED IN TOR","DEFINED IN TOR, DEFAULT 6 MTH MAX","COMPLIANCE APPRAISAL: 60 DAYS; MANAGEMENT RESPONSE: 15 DAYS; INVESTIGATION: 6 MONTHS.","IMPLEMENTATION PLAN: 4-6 WEEKS; INVESTIGATION WITHIN 6 MONTHS. INVESTIGATION PLAN WITH TIME-FRAME ISSUED WITHIN FOUR TO SIX WEEKS AFTER AN INVESTIGATION IS APPROVED BY THE BOARD. THE PANEL SEEKS TO COMPLETE ITS INVESTIGATIONS WITHIN SIX MONTHS FOLLOWING COMPLETION OF THE INVESTIGATION PLAN."
+"Timeline for Handling Claims (in business days unless noted wth ""*"")","How long is the problem-solving stage?","TERMINATED IF UNSUCCESSFUL WITHIN 3 MONTHS","180","NO SET TIMELINE, BUT TIMELINES SET IN EACH TOR.","140","NO LIMIT","365","NO LIMIT",
+"Timeline for Handling Claims (in business days unless noted wth ""*"")","How long is the total process from receipt of the request through closing of the case?","NO LIMIT","SPF: APPROX. 232 DAYS (2 YEARS MONITORING); CRP: APPROX. 272 DAYS (3 YEARS MONITORING).","NO LIMIT","140","NO LIMIT","PS: 327 DYS / CR: ~225 (MAX 5 YR MONITORING BOTH)","PROBLEM SOLVING: NO LIMIT; COMPLIANCE REVIEW: APPROXIMATELY 13 MONTHS.","NO LIMIT."
+"Timeline for Handling Claims (in business days unless noted wth ""*"")","Within how many days from receipt must a decision be made regarding registration?","14","2","10","10","15","5",,"15"
+"Training","Are Panel members/Experts regularly trained regarding the institution / mechanism?","1",,"1",,,,,
+"Training","Is there regular training of institution staff at headquarters regarding the mechanism?",,"1","1",,,,,
+"Training","Is there regular training of resident office staff regarding the mechanism?",,"1","1",,,,,
+"Transparency ","Are final compliance reports of the mechanism made public?","1","1","1","1","1","1","1","1"
+"Transparency ","Are final decisions (by mechanism, Board or President) made public?","1","1","1","1","1","1","1","1"
+"Transparency ","Are final problem-solving reports of the mechanism made public?","1","1","YES, IF PARTIES AGREE. IF NOT, A SUMMARY","1","1","1","1",
+"Transparency ","Are follow-up monitoring reports made public?",,"1","1","0","1","1","1",
+"Transparency ","Are the mechanism's compliance eligibility reports made public?","1","1","1","1","1","1","1","1"
+"Transparency ","Are the mechanism's problem-solving eligibility reports made public?","1","1","1","1","1","1","1",
+"Transparency ","Are the requests themselves made public?",,"1","1","0","0","1",,"1"
+"Transparency ","Is there a public registry of all claims found eligible?","1","1","1","1","1","1","1","1"
+"Transparency ","Is there a public registry of all claims submitted?","1","1","0","0","0","0","1","1"
+"Transparency ","Is there a public registry of claims registered?","1","1","1","1",,"1",,"1"
+"Transparency ","Is there a public registry of requests?","1","1","0","0","0","1","1","1"
+"Transparency ","Must the identities of investigators be disclosed to the public?","0","0",,"0",,,,"0"
+"When to bring the claim","Is there a time frame within which a claim must be brought?","1","1","1","1","1","1","1","1"
+"When to bring the claim","May a claim be brought after full disbursal of funds?","1","1","1","1","1","1","1","0"
+"When to bring the claim","May a claim be brought after physical completion of the project?","1","1","1","1","1","1","1","0"
+"When to bring the claim","May a claim be brought before a project is approved by the institution's Board?","1","1",,"1","1","0","1","1"
+"Who determines eligibility","How long does the mechanism take to determine eligibility for further review?","WITHIN 5 DAYS OF MANAGEMENT RESPONSE","SPF: APPROX. 52 DAYS; CRP: APPROX. 72 DAYS","40","INITIAL ADMISSIBILITY DECISION TAKES 10 DAYS. THE ELIGIBILITY DECISION FOR COMPLIANCE REVIEW AND MEDIATION FOR COMPLAINTS ON ENVIRONMENTAL AND SOCIAL IMPACTS AND GOVERNANCE COMPLAINTS TAKES APPROXIMATELY 60 DAYS.","15 DAYS.","21","WITHIN 20 DAYS OF ACKNOWLEDGING THE REQUEST.",
+"Who determines eligibility","Is eligibility conducted by the mechanism staff, independent experts/panelists, or both?","PROBLEM SOLVING: CRMU DIRECTOR; COMPLIANCE REVIEW: PRESIDENT OR BOARDS (CRMU DIRECTOR MAY SUBMIT A RECOMMENDATION)","SPF: PROBLEM SOLVING; CRP: COMPLIANCE REVIEW","BOTH: PCM OFFICER AND PCM EXPERT.","INITIAL ADMISSIBILITY DECISION TAKEN BY THE EIB-CM HEAD. THE ELIGIBILITY DECISION FOR COMPLIANCE REVIEW AND MEDIATION FOR COMPLAINTS ON ENVIRONMENTAL AND SOCIAL IMPACTS AND GOVERNANCE COMPLAINTS IS TAKEN BY THE EIB-CM HEAD IN AGREEMENT WITH THE INSPECTOR GENERAL.","CAO (SECRETARIAT)","MECHANISM STAFF","MECHANISM STAFF","PANEL"
+"Who may bring a claim to the mechanism?","Are there requirements beyond need and approval for a representative to file on behalf?","1","1","0","NO PROVISION.","0","0","0","1"
+"Who may bring a claim to the mechanism?","For a non-local representative to bring a claim, must there be a showing of no adequate local representation?","1","1","0","NO PROVISION.","0","0","0","1"
+"Who may bring a claim to the mechanism?","May a representative file a claim on behalf of affected person?","1","1","1","1","1","1","1","1"
+"Who may bring a claim to the mechanism?","May an individual bring a claim? What is the minimum number of claimants?","0","0","1","1","1","0","1","0"
+"Who may bring a claim to the mechanism?","Must the claimant live in a project area?","0","0","0","0","0","0","0","0"
+"Who may bring a claim to the mechanism?","Must the claimant live in the borrowing country of the project at issue?","1","0","0","0","0","1","0","1"
