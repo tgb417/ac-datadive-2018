@@ -7,14 +7,14 @@ library(stringr)
 # Loading in raw data
 benchmarks <-
   read.csv(
-    "ac_benchmarks_data_2018-06-20.csv",
+    "~/repos/DataKind/ac-datadive-2018/Complaint_Analysis_Project/Data/raw/ac_benchmarks_data_2018-06-20.csv",
     header = TRUE,
     sep = ",",
     stringsAsFactors = FALSE
   )
 complaints <-
   read.csv(
-    "accountability_console_2018-06-18.csv",
+    "~/repos/DataKind/ac-datadive-2018/Complaint_Analysis_Project/Data/raw/accountability_console_2018-06-18.csv",
     header = TRUE,
     sep = ",",
     stringsAsFactors = FALSE
@@ -210,9 +210,9 @@ complaints$If_No_Eligibility_Why[which(complaints$If_No_Eligibility_Why == "")] 
 max(str_count(complaints$If_No_Eligibility_Why, pattern = ","), na.rm = TRUE) # 3
 complaints <- complaints %>%
   separate(If_No_Eligibility_Why, c("If_No_Eligibility_Why_1", "If_No_Eligibility_Why_2", "If_No_Eligibility_Why_3"), ",")
-complaints$If_No_Eligibility_Why_1[which(complaints$If_No_Eligibility_Why_1 == "Unknown")] <- NA
-complaints$If_No_Eligibility_Why_2[which(complaints$If_No_Eligibility_Why_2 == "Unknown")] <- NA
-complaints$If_No_Eligibility_Why_3[which(complaints$If_No_Eligibility_Why_3 == "Unknown")] <- NA
+# complaints$If_No_Eligibility_Why_1[which(complaints$If_No_Eligibility_Why_1 == "Unknown")] <- NA
+# complaints$If_No_Eligibility_Why_2[which(complaints$If_No_Eligibility_Why_2 == "Unknown")] <- NA
+# complaints$If_No_Eligibility_Why_3[which(complaints$If_No_Eligibility_Why_3 == "Unknown")] <- NA
 
 # Dispute_Resolution_Start
 sum(is.na(complaints$Dispute_Resolution_Start)) # Counting vals for writeup
@@ -226,7 +226,7 @@ sum(is.na(complaints$Dispute_Resolution_Status))
 
 # If_No_Dispute_Resolution_Why
 unique(complaints$If_No_Dispute_Resolution_Why)
-complaints$If_No_Dispute_Resolution_Why[which(complaints$If_No_Dispute_Resolution_Why == "Unknown")] <- NA
+# complaints$If_No_Dispute_Resolution_Why[which(complaints$If_No_Dispute_Resolution_Why == "Unknown")] <- NA
 sum(is.na(complaints$If_No_Dispute_Resolution_Why))
 
 # Compliance_Review_Start
@@ -240,7 +240,7 @@ sum(is.na(complaints$Compliance_Review_Status))
 # Cleaning up reasons for no compliance report (these are pretty good)
 unique(complaints$If_No_Compliance_Report_Why)
   # Not necessary to comma separate (also, some of the reasons themselves contain commas)
-complaints$If_No_Compliance_Report_Why[which(complaints$If_No_Compliance_Report_Why == "Unknown")] <- NA
+# complaints$If_No_Compliance_Report_Why[which(complaints$If_No_Compliance_Report_Why == "Unknown")] <- NA
 sum(is.na(complaints$If_No_Compliance_Report_Why))
 
 # Monitoring_Start
@@ -254,7 +254,13 @@ sum(is.na(complaints$Monitoring_Status))
 # Cleaning up reasons for not monitoring (also pretty good)
 unique(complaints$If_No_Monitoring_Why)
   # Not necessary to comma separate 
-complaints$If_No_Monitoring_Why[which(complaints$If_No_Monitoring_Why %in% c("N/A", "Unknown"))] <- NA
+complaints$If_No_Monitoring_Why[which(complaints$If_No_Monitoring_Why %in% c("N/A"))] <- NA
+
+# Logic to determine final eligibility of complaint
+sum(complaints$Eligibility_Status == "closed_with_outcome" & complaints$Status != "Active", na.rm = TRUE)
+
+complaints$ELIGIBLE <- ifelse(complaints$Status != "Active" & complaints$Eligibility_Status == "closed_with_outcome", 1, 0)
+complaints$ELIGIBLE[which(complaints$Status == "Active")] <- NA
 
 # Saving data
 write.csv(complaints, file = "accountability_console_data_cleaned.csv", na = "", row.names = FALSE)
