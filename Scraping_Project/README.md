@@ -29,8 +29,16 @@ Major areas for improvement include
     
     ```
     Template_Scraper\
-       [Srinivas 2 Fill IN]
+       mici-scraper.ipynb
     ```
+
+#### strategy for a new scraper
+    * have a common set of fields (common model) for all the scrapers [Master scraper]
+    * store the list of projects as dataframe
+    * export the result to a CSV
+
+#### strategy to combine all CSVs
+    * collate all CSVs to one CSV in a local folder with timestamp to avoid overriding
 
 
 ### b) Save and Compare Scrapes [FILL ME IN PLEASE]
