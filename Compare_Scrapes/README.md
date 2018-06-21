@@ -22,7 +22,7 @@
 * Records summary of changes
 
 ## c) Data Summary
-`Complaint_Data_Scraped.xlsx` contains the output of the existing scrapers, while `Complaint_Data_Scraped_diff.xlsx` is the same output with a subset of columns in 4 of the 5 sheets permuted. The code used to produce the second file is saved in `../_Admin/Setup/Notebooks/diff_data.ipynb`. The altered columns in each sheet are
+`Complaint_Data_Scraped.xlsx` contains the output of the existing scrapers, while `Complaint_Data_Scraped_diff.xlsx` is the same output with a subset of columns in 4 of the 5 sheets permuted. These two files should be used for testing the comparison module. The code used to produce the second file is saved in `../_Admin/Setup/Notebooks/diff_data.ipynb`. The altered columns in each sheet are
 * Panel - 'Filing Date', 'Date Closed'
 * EIB - 'Dispute Resolution End Date', 'Documents'
 * MICI - 'Compliance Review Start Date', 'Date Closed'
